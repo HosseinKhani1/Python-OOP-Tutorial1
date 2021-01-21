@@ -20,7 +20,7 @@ The idea of class Box is to initialize instances of Box either by specifying the
 
 Note that, in both cases it does not matter in which order we are going to enter the arguments. As long as we use the write keywords for the arguments (x1, x2, y1, y2 or p1 , p2) for representation we always should have the coordinated of the first point and then the coordinated of second point.
 
-To do so, we have used the prefix operators ** in the definition of __init__ method of class Box. Using such operators in the argument section of a function, specifies that there are an arbitrary number of arguments that can come in. In fact, the prefix asterisk operator, do a kind of unpacking process over the data entered to the function. For more information about it take a look at the unpacking concept in python.
+To do so, we have used the prefix operators ** in the definition of __init__ method of class Box. Using such operators in the argument section of a function, specifies that there are an arbitrary number of arguments that can come in. In fact, the prefix asterisk operator, do a kind of unpacking process over the data entered to the function. For more information about it take a look at the unpacking concept in python. Specially, two asterisk together means that the arguments to the function are accompanied by keywords.
 
-Specially, two asterisk together means that the arguments to the function are accompanied by keywords.
+In the code **coordinates signals to the __init__ method that there are an arbitrary number of arguments which are accompanied by the keywords. As we know, the __dict__ dictionary is responsible to keep track of all of the attributs of instances of class, so one way to specify the attributes of the class is to update the __dict__ for each instance which is created.
 
