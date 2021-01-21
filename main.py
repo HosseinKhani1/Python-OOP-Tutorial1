@@ -20,15 +20,6 @@ class Box:
 
 
 
-    @property
-    def pixelHG(self):
-        return self.__pixelHG
-
-    @pixelHG.setter
-    def pixelHG(self,pixelHG):
-        self.__pixelHG=pixelHG
-
-
     def __str__(self):
 
         """ User friend representation of the object"""
@@ -78,15 +69,6 @@ class TexBox(Box):
         print(self.__dict__)
         type(self).sortedDic= sorted(self.__dict__.items(), key=lambda i: keyorder.index(i[0]))
 
-       # if isinstance(arguments[len(arguments)-1],str):
-        #    self.text=arguments[len(arguments)-1]
-
-    @property
-    def text(self):
-        return self.__text
-    @text.setter
-    def text(self,text):
-        self.__text=text
 
     def __str__(self):
         return str(type(self).sortedDic)
